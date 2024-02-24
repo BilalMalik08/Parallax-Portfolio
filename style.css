@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Mooli&family=Skranji&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-color: black;
+}
+
+.bg-video-container1 {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+}
+
+.bg-video1 {
+    height: 200vh;
+}
+
+.content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.hero-image-container {
+    height: 50%;
+    width: 50%;
+    margin-top: 15px;
+}
+
+.hero-img {
+    height: 725px;
+    width: 770px;
+    padding-bottom: 25px;
+}
+
+.hero-text-container {
+    height: 50%;
+    width: 50%;
+    margin-top: 15px;
+}
+
+.hero-text {
+    color: #c2bdbd;
+    font-size: 45vw;
+    padding-bottom: 25px;
+    cursor: default;
+}
+
+.welcome-text {
+    color: white;
+    position: absolute;
+    bottom: -50%;
+    text-align: center;
+    cursor: default;
+    transition: font-size 0.5s all ease;
+}
+
+.name-container {
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.name-text {
+    font-size: 20vw;
+    color: #c2bdbd;
+    cursor: default;
+}
+
+.job-title-container {
+    height: 100vh;
+}
+
+.dark {
+    background: url(img/bg1.png);
+}
+
+.purple {
+    background: purple url(img/bg2.png);
+}
+
+.job-text {
+    font-size: 10vw;
+    color: #c2bdbd;
+    line-height: 100vh;
+    cursor: default;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0 100px;
+}
+
+#project-heading {
+    text-align: center;
+}
+
+.project-text {
+    font-size: 6.5vw;
+    color: #c2bdbd;
+    cursor: default;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.phone {
+    width: 300px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.phone-screen {
+    width: 282px;
+    height: 590px;
+    position: absolute;
+    border: 5px solid #c2bdbd; 
+    border-radius: 27px;
+    overflow: scroll;
+}
+
+.phone-screen::-webkit-scrollbar {
+    display: none;
+}
+
+.phone-app-img {
+    width: 100%;
+}
+
+.phone-app-img-2 {
+    width: 100%;
+    height: 100%;
+}
+
+.project-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.project-description {
+    font-size: 20px;
+    color: #c2bdbd;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.project-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #c2bdbd; 
+    color: #948f8f;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.project-button::after {
+    content: "View Demo";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #948f8f;
+    color: #000;
+}
+
+.project-button:hover.project-button::after {
+    transform: translateX(100%);
+}
+
+.laptop {
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.lapto-screen {
+    width: 453px;
+    height: 285px;
+    position: absolute;
+    overflow: scroll;
+    margin: 19px 0px 0px 67px;
+}
+
+.lapto-screen::-webkit-scrollbar {
+    display: none;
+}
+
+.laptop-app-vid {
+    width: 100%;
+}
+
+.github-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.github-text {
+    font-size: 5.5vw;
+    color: #c2bdbd;
+    cursor: default;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.github-link {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-link img {
+    height: 60px;
+    border-radius: 50%;
+    margin: 0px 20px;
+}
+
+.github-link a {
+    font-size: 50px;
+    color: #c2bdbd;
+    text-decoration: none;
+    border-bottom: 5px solid #063f24;
+}
+
+.github-chart {
+    width: 820px;
+    text-align: center;
+}
+
+.dates {
+    padding: 10px;
+    color: #c2bdbd;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+.active:nth-child(n) {
+    background-color: #195b2c;
+}
+
+.github-chart:hover .active:nth-child(2n) {
+    background-color: #063f24;
+}
+
+.bg-video-container2 {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+}
+
+.bg-video2 {
+    height: 200vh;
+    object-fit: cover;
+}
+
+.content2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.thank-you {
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #c2bdbd;
+    font-size: 40px;
+    padding: 10px 20px;
+}
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+
+    .container {
+        overflow: hidden;
+    }
+
+    .bg-video-container1 {
+        position: relative;
+        width: 100%;
+        height: 195vh;
+        overflow: hidden;
+    }
+
+    .bg-video1 {
+        height: 200vh;
+        overflow: hidden;
+    }
+
+    .content1 {
+        position: absolute;
+        top: 58%;
+        left: 72%;
+        transform: translate(-50%, -100%);
+    }
+
+    .hero-section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .hero-img {
+        height: 95vh;
+        width: 130vw;
+        margin-left: 110px;
+    }
+
+    .hero-text {
+        font-size: 45vw;
+        margin-top: 0px;
+        margin-right: 110px;
+        cursor: default;
+    }
+
+    .welcome-text {
+        bottom: -50%;
+        left: 60%;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .welcome-text h2 {
+        font-size: 8vw;
+    }
+
+    .name-container {
+        justify-content: unset;
+    }
+
+    .name-text {
+        font-size: 12vw;
+        line-height: 100vh;
+        height: 100vh;
+    }
+
+    .job-title-container {
+        height: 103vh;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30vh;
+        padding: 0 0px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+    }
+
+    #project-heading {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .project-details {
+        margin-top: 0px;
+    }
+
+    .project-text {
+        font-size: 8vw;
+    }
+
+    .project-description {
+        margin: 0 75px;
+        font-size: 30px;
+    }
+
+    .project-button {
+        padding: 20px 50px;
+        font-size: 30px;
+    }
+
+    .github-text {
+        font-size: 50px;
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    .github-link {
+        margin: 50px 0 0 0;
+    }
+
+    .github-link a {
+        font-size: 25px;
+    }
+
+    .github-container {
+        height: 101vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 25%;
+    }
+
+    .bg-video-container2 {
+        position: relative;
+        width: 100%;
+        height: 101vh;
+        overflow: hidden;
+    }
+
+    .bg-video2 {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .content2 {
+        position: absolute;
+        top: 40%;
+    }
+
+    .thank-you {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        overflow: hidden;
+    }
+
+    .bg-video-container1 {
+        position: relative;
+        width: 100%;
+        height: 195vh;
+        overflow: hidden;
+    }
+
+    .bg-video1 {
+        height: 200vh;
+        overflow: hidden;
+    }
+
+    .content1 {
+        transform: translate(-50%, -90%);
+    }
+
+    .hero-img {
+        height: 95vh;
+        width: 150vw;
+        margin-left: 0px;
+    }
+
+    .hero-text {
+        font-size: 45vw;
+        margin-top: 90%;
+        margin-right: 0px;
+        cursor: default;
+    }
+
+    .welcome-text {
+        right: 35%;
+        bottom: -40%;
+    }
+
+    .name-container {
+        justify-content: unset;
+    }
+
+    .name-text {
+        font-size: 12vw;
+        line-height: 100vh;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20vh;
+        padding: 0 0px;
+    }
+
+    .project {
+        display: contents;
+        height: 100vh;
+    }
+
+    .project-details {
+        margin-top: 50px;
+    }
+
+    #project-heading {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .project-description {
+        margin: 0 25px;
+    }
+
+    .project-text {
+        font-size: 8vw;
+    }
+
+    .github-text {
+        font-size: 25px;
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    .github-link {
+        margin: 25px 0 0 0;
+    }
+
+    .github-link a {
+        font-size: 12.5px;
+    }
+
+    .phone,
+    .laptop {
+        transform: none !important;
+    }
+
+    .phone {
+        margin: auto;
+    }
+
+    .laptop {
+        width: 200px;
+        height: 400px;
+        position: relative;
+    }
+
+    /* .bg-video2 {
+        margin: -1px;
+    } */
+}
